@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    arkadasSayiMi(220,284);
+      
+    function arkadasSayiMi(sayibir,sayiiki){
+        let arkadasMİ = true;
+        let toplambir = 0;
+        let toplamiki = 0;
+
+        for(let i = 0; i<sayibir; i++){
+            if(sayibir % i == 0){
+                toplambir = toplambir + i; // toplambir += i
+            }
+        }
+        for(let i = 0; i<sayiiki; i++){
+            if(sayiiki % i == 0){
+                toplamiki = toplamiki + i;
+            }
+        }
+        if(sayibir == toplamiki || sayiiki == toplambir){
+            arkadasSayiMi = true;
+            console.log("Bu sayılar arkadaş sayılardır. " + arkadasSayiMi);
+        }
+        else{
+            arkadasSayiMi = false;
+            console.log("Bu sayılar arkadaş sayı değildir. " + arkadasSayiMi);
+        }
+        
+    }
+
+    </script>
+</body>
+</html>l

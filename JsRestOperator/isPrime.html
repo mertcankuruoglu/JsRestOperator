@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        findPrime(2, 5, 8, 21, 13);
+        findPrime(3, 5)
+
+        function findPrime(...numbers) {
+            console.log("Girilen Sayılar: " + numbers);
+            for (let baslangic = 0; baslangic < numbers.length; baslangic++) {
+                for (let index = 2; index < numbers[baslangic]; index++) {
+
+                    if (numbers[baslangic] % index == 0) {
+                        console.log(numbers[baslangic] + "-> Sayısı asal değil");
+                        break;
+                    } else {
+                        console.log(numbers[baslangic] + "-> Sayısı Asaldır");
+                        break;
+                    }
+
+
+                }
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
